@@ -1,4 +1,4 @@
-async function findAndSaveUser(Users) {
+const findAndSaveUser = async (Users) => {
     try {
         let user = await Users.findOne({});
         user.name = 'zero';
@@ -8,4 +8,4 @@ async function findAndSaveUser(Users) {
     } catch (error) {
         console.error(error);
     }
-}
+};
